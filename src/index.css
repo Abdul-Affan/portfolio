@@ -822,3 +822,92 @@ nav.scrolled {
     grid-template-columns: 1fr;
   }
 }
+
+/* --- Added for Mobile Responsiveness --- */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--accent-primary);
+  min-height: 3.5rem;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    min-height: 2.5rem;
+  }
+  
+  .hero-content p {
+    text-align: center;
+  }
+
+  .cta-group {
+    justify-content: center;
+  }
+
+  .contact-info-mini span {
+    justify-content: center;
+  }
+
+  .social-icons-mini {
+    justify-content: center;
+  }
+  
+  .profile-img-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  
+  .projects-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .projects-title-area h2 {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem !important;
+  }
+
+  .arsenal-header h2, .education-header h2, .contact-header h2 {
+    font-size: 2.5rem !important;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+}

@@ -124,11 +124,11 @@ const App = () => {
       <main>
         {/* Hero Section */}
         <section id="home" className="hero">
-          <div className="container" style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+          <div className="container hero-container">
             <div className="hero-content" data-reveal>
               <div className="availability-tag">Available for Work</div>
               <h1>I'm <span>Abdul Affan</span></h1>
-              <h3 style={{ fontSize: '2rem', fontWeight: '700', marginBottom: '1rem', color: 'var(--accent-primary)', minHeight: '3.5rem' }}>
+              <h3 className="hero-subtitle">
                 {text}
                 <span className="cursor" style={{ marginLeft: '5px' }}>|</span>
               </h3>
@@ -174,7 +174,7 @@ const App = () => {
         {/* About Section */}
         <section id="about">
           <div className="container" data-reveal style={{ textAlign: 'center' }}>
-            <h2 className="gradient-text" style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>About Me</h2>
+            <h2 className="gradient-text section-title">About Me</h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: '3.5rem', fontSize: '1.1rem' }}>
               A passionate developer bridging the gap between design and functionality.
             </p>
