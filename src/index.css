@@ -352,7 +352,7 @@ nav.scrolled {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
-  max-width: 340px;
+  max-width: 315px;
   margin: 0 auto;
 }
 
@@ -364,7 +364,7 @@ nav.scrolled {
 
 .project-img-container {
   position: relative;
-  height: 180px;
+  height: 160px;
   overflow: hidden;
 }
 
@@ -394,7 +394,7 @@ nav.scrolled {
 }
 
 .project-content-v2 {
-  padding: 1.5rem;
+  padding: 1.25rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -425,20 +425,21 @@ nav.scrolled {
 .project-desc-v2 {
   color: var(--text-muted);
   font-size: 0.9rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   line-height: 1.5;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: 4.5rem; /* Ensure consistent height for 3 lines */
+  min-height: 2.8rem;
 }
 
 .tech-stack-v2 {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .tech-tag-v2 {
@@ -453,7 +454,7 @@ nav.scrolled {
 
 .project-footer-v2 {
   margin-top: auto;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--glass-border);
   display: flex;
   justify-content: space-between;
