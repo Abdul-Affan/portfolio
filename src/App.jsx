@@ -276,66 +276,6 @@ const App = () => {
           </div>
         </section>
 
-        {/* Certifications Section */}
-        <section id="certifications">
-          <div className="container" data-reveal>
-            <h2 className="gradient-text section-title">Certifications</h2>
-            <p style={{ color: 'var(--text-muted)', marginBottom: '3.5rem', fontSize: '1.1rem' }}>
-              Continuous learning and professional development.
-            </p>
-
-            <div className="certifications-grid">
-              {[
-                {
-                  title: "Java Certification",
-                  org: "Udemy",
-                  status: "Completed",
-                  skills: ["Java", "OOP", "Backend Development"],
-                  link: "/certificates/java-cert.pdf"
-                },
-                {
-                  title: "Level 1 & 2 Conqueror - Ninja Slayground 2.0",
-                  org: "Coding Ninjas",
-                  status: "Completed",
-                  skills: ["Data Structures", "Algorithms", "Competitive Programming"],
-                  link: "https://www.codingninjas.com/"
-                },
-                {
-                  title: "160 Days of Problem Solving",
-                  org: "GeeksforGeeks",
-                  status: "Completed",
-                  skills: ["Problem Solving", "Logic Building", "DSA"],
-                  link: "https://www.geeksforgeeks.org/"
-                }
-              ].map((cert, index) => (
-                <div key={index} className="glass cert-card">
-                  <div className="cert-header">
-                    <div className="cert-icon">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.45.98.95 1.21 1.2 1.21 2.05 2.7 2.05 4.46"></path><path d="M12 2C9.5 2 7 4.5 7 7c0 .55.45 1 1 1h8c.55 0 1-.45 1-1 0-2.5-2.5-5-5-5z"></path></svg>
-                    </div>
-                    <a href={cert.link} target="_blank" rel="noreferrer" className="cert-link-icon">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                    </a>
-                  </div>
-                  <div className="cert-info">
-                    <h3>{cert.title}</h3>
-                    <div className="cert-meta">
-                      <span>{cert.org}</span>
-                      <span>•</span>
-                      <span>{cert.status}</span>
-                    </div>
-                  </div>
-                  <div className="cert-tags">
-                    {cert.skills.map(skill => (
-                      <span key={skill} className="cert-tag">{skill}</span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Projects Section */}
         <section id="projects">
           <div className="container">
@@ -450,6 +390,66 @@ const App = () => {
                       </span>
                     </div>
                     <p className="timeline-desc">{edu.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Certifications Section */}
+        <section id="certifications">
+          <div className="container" data-reveal>
+            <h2 className="gradient-text section-title">Certifications</h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '3.5rem', fontSize: '1.1rem' }}>
+              Continuous learning and professional development.
+            </p>
+
+            <div className="certifications-grid">
+              {[
+                {
+                  title: "Java Certification",
+                  org: "Udemy",
+                  status: "Completed",
+                  skills: ["Java", "OOP", "Backend Development"],
+                  link: "/certificates/java-cert.pdf"
+                },
+                {
+                  title: "Level 1 & 2 Conqueror - Ninja Slayground 2.0",
+                  org: "Coding Ninjas",
+                  status: "Completed",
+                  skills: ["Data Structures", "Algorithms", "Competitive Programming"],
+                  link: "https://www.codingninjas.com/"
+                },
+                {
+                  title: "160 Days of Problem Solving",
+                  org: "GeeksforGeeks",
+                  status: "Completed",
+                  skills: ["Problem Solving", "Logic Building", "DSA"],
+                  link: "https://www.geeksforgeeks.org/"
+                }
+              ].map((cert, index) => (
+                <div key={index} className="glass cert-card">
+                  <div className="cert-header">
+                    <div className="cert-icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.45.98.95 1.21 1.2 1.21 2.05 2.7 2.05 4.46"></path><path d="M12 2C9.5 2 7 4.5 7 7c0 .55.45 1 1 1h8c.55 0 1-.45 1-1 0-2.5-2.5-5-5-5z"></path></svg>
+                    </div>
+                    <a href={cert.link} target="_blank" rel="noreferrer" className="cert-link-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                  </div>
+                  <div className="cert-info">
+                    <h3>{cert.title}</h3>
+                    <div className="cert-meta">
+                      <span>{cert.org}</span>
+                      <span>•</span>
+                      <span>{cert.status}</span>
+                    </div>
+                  </div>
+                  <div className="cert-tags">
+                    {cert.skills.map(skill => (
+                      <span key={skill} className="cert-tag">{skill}</span>
+                    ))}
                   </div>
                 </div>
               ))}
