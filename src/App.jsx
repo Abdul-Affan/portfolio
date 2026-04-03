@@ -415,11 +415,11 @@ const App = () => {
                   link: "/certificates/java-cert.pdf"
                 },
                 {
-                  title: "Level 1 & 2 Conqueror - Ninja Slayground 2.0",
-                  org: "Coding Ninjas",
+                  title: "Front End Web Developer [Springboard]",
+                  org: "Springboard",
                   status: "Completed",
-                  skills: ["Data Structures", "Algorithms", "Competitive Programming"],
-                  link: "https://www.codingninjas.com/"
+                  skills: ["React.js", "HTML5", "CSS3", "JavaScript", "Responsive Design"],
+                  link: "/certificates/frontend-cert.pdf"
                 },
                 {
                   title: "160 Days of Problem Solving",
