@@ -339,8 +339,8 @@ nav.scrolled {
 
 .project-grid-v2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 290px);
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, 280px);
+  gap: 1rem;
   justify-content: center;
 }
 
@@ -352,7 +352,8 @@ nav.scrolled {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
-  max-width: 290px;
+  width: 280px !important;
+  max-width: 280px !important;
   margin: 0 auto;
 }
 
@@ -364,7 +365,7 @@ nav.scrolled {
 
 .project-img-container {
   position: relative;
-  height: 130px;
+  height: 120px;
   overflow: hidden;
 }
 
