@@ -182,9 +182,9 @@ const App = () => {
               </div>
 
               <div className="social-icons-mini">
-                <a href="https://github.com/Abdul-Affan/" target="_blank" className="social-icon-circle">GH</a>
-                <a href="https://www.linkedin.com/in/abdul-affan-64471a31a/" target="_blank" className="social-icon-circle">IN</a>
-                <a href="#" className="social-icon-circle">&lt;/&gt;</a>
+                <a href="https://github.com/Abdul-Affan/" target="_blank" rel="noreferrer" className="social-icon-circle">GH</a>
+                <a href="https://www.linkedin.com/in/abdul-affan-64471a31a/" target="_blank" rel="noreferrer" className="social-icon-circle">IN</a>
+                <a href="https://leetcode.com/AbdulAffan/" target="_blank" rel="noreferrer" className="social-icon-circle">LC</a>
               </div>
             </div>
 
@@ -454,9 +454,9 @@ const App = () => {
                 <div className="follow-me-v2">
                   <h4>FOLLOW ME</h4>
                   <div className="social-icons-mini" style={{ marginTop: '0' }}>
-                    <a href="https://github.com/Abdul-Affan/" target="_blank" className="social-icon-circle">GH</a>
-                    <a href="https://www.linkedin.com/in/abdul-affan-64471a31a/" target="_blank" className="social-icon-circle">IN</a>
-                    <a href="#" className="social-icon-circle">&lt;/&gt;</a>
+                    <a href="https://github.com/Abdul-Affan/" target="_blank" rel="noreferrer" className="social-icon-circle">GH</a>
+                    <a href="https://www.linkedin.com/in/abdul-affan-64471a31a/" target="_blank" rel="noreferrer" className="social-icon-circle">IN</a>
+                    <a href="https://leetcode.com/AbdulAffan/" target="_blank" rel="noreferrer" className="social-icon-circle">LC</a>
                   </div>
                 </div>
               </div>
