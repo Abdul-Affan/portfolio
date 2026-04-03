@@ -162,7 +162,7 @@ const App = () => {
           <div className="container hero-container">
             <div className="hero-content" data-reveal>
               <div className="availability-tag">Available for Work</div>
-              <h1>I'm <span>Hari Prasad</span></h1>
+              <h1>I'm <span>Abdul Affan</span></h1>
               <h3 className="hero-subtitle">
                 {text}
                 <span className="cursor" style={{ marginLeft: '5px' }}>|</span>
@@ -182,12 +182,12 @@ const App = () => {
                   </svg>
                   Bangalore, India
                 </span>
-                <a href="mailto:haripd2261@gmail.com" className="contact-link-mini" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'inherit', textDecoration: 'none' }}>
+                <a href="mailto:abdul.mca24@cmrit.ac.in" className="contact-link-mini" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'inherit', textDecoration: 'none' }}>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--accent-primary)' }}>
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
-                  haripd2261@gmail.com
+                  abdul.mca24@cmrit.ac.in
                 </a>
               </div>
 
@@ -206,7 +206,7 @@ const App = () => {
 
             <div className="profile-img-wrapper" data-reveal>
               <div className="profile-img-container">
-                <img src={profileImg} alt="Hari Prasad" />
+                <img src={profileImg} alt="Abdul Affan" />
               </div>
             </div>
           </div>
@@ -523,7 +523,7 @@ const App = () => {
                   </div>
                   <div className="info-content-v2">
                     <h4>Email</h4>
-                    <p>haripd2261@gmail.com</p>
+                    <p>abdul.mca24@cmrit.ac.in</p>
                   </div>
                 </div>
 
@@ -567,11 +567,11 @@ const App = () => {
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Hari Prasad" required />
+                    <input type="text" id="name" name="name" placeholder="Abdul Affan" required />
                   </div>
                   <div className="form-group">
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="haripd2261@gmail.com" required />
+                    <input type="email" id="email" name="email" placeholder="abdul.mca24@cmrit.ac.in" required />
                   </div>
                 </div>
                 <div className="form-group">
@@ -601,7 +601,7 @@ const App = () => {
       </main>
 
       <footer style={{ padding: '4rem 0', borderTop: '1px solid var(--glass-border)', textAlign: 'center' }}>
-        <p style={{ color: 'var(--text-muted)' }}>&copy; 2026 Hari Prasad. Professional Portfolio.</p>
+        <p style={{ color: 'var(--text-muted)' }}>&copy; 2026 Abdul Affan. Professional Portfolio.</p>
       </footer>
     </div>
   );
