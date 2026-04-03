@@ -421,13 +421,7 @@ const App = () => {
                   skills: ["React.js", "HTML5", "CSS3", "JavaScript", "Responsive Design"],
                   link: "/certificates/frontend-cert.pdf"
                 },
-                {
-                  title: "160 Days of Problem Solving",
-                  org: "GeeksforGeeks",
-                  status: "Completed",
-                  skills: ["Problem Solving", "Logic Building", "DSA"],
-                  link: "https://www.geeksforgeeks.org/"
-                }
+
               ].map((cert, index) => (
                 <div key={index} className="glass cert-card">
                   <div className="cert-header">
