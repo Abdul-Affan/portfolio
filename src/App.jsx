@@ -478,7 +478,7 @@ const App = () => {
               <div className="glass arsenal-card">
                 <h3>Backend</h3>
                 <div className="arsenal-tags">
-                  {['Java', 'C', 'Python', 'PHP'].map(skill => (
+                  {['Java', 'C', 'Python', 'Spring Boot', 'REST APIs', 'Node.js'].map(skill => (
                     <span key={skill} className="arsenal-tag">{skill}</span>
                   ))}
                 </div>
