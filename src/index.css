@@ -255,8 +255,9 @@ nav.scrolled {
 
 .contact-info-mini {
   display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   color: var(--text-muted);
   font-size: 0.95rem;
 }
