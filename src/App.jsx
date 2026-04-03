@@ -45,7 +45,7 @@ const App = () => {
       title: "Chatbot (NLP)",
       category: "AI/ML",
       desc: "Developed a basic chatbot capable of understanding and responding to user inputs using Natural Language Processing techniques.",
-      tech: ["Python", "NLTK", "Jupyter"],
+      tech: ["Python", "NLTK", "IntelliJ IDEA"],
       img: project1Img,
       status: "Completed",
       github: "https://github.com/Abdul-Affan/"
@@ -496,7 +496,7 @@ const App = () => {
               <div className="glass arsenal-card">
                 <h3>Tools</h3>
                 <div className="arsenal-tags">
-                  {['VS Code', 'Eclipse IDE', 'GitHub', 'Jupyter'].map(skill => (
+                  {['VS Code', 'Eclipse IDE', 'GitHub', 'IntelliJ IDEA'].map(skill => (
                     <span key={skill} className="arsenal-tag">{skill}</span>
                   ))}
                 </div>
