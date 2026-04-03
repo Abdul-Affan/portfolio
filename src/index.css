@@ -1,9 +1,10 @@
 :root {
-  --bg-color: #030712;
+  --bg-color: #030014;
+  --bg-accent: #0a0a2e;
   --card-bg: rgba(17, 24, 39, 0.7);
   --glass-border: rgba(255, 255, 255, 0.08);
-  --accent-primary: #2563eb;
-  --accent-secondary: #7c3aed;
+  --accent-primary: #3b82f6;
+  --accent-secondary: #a855f7;
   --text-main: #f9fafb;
   --text-muted: #9ca3af;
   --font-family: 'Outfit', sans-serif;
@@ -23,6 +24,8 @@
 
 body {
   background-color: var(--bg-color);
+  background-image: radial-gradient(circle at 50% -20%, var(--bg-accent), transparent 70%);
+  background-attachment: fixed;
   color: var(--text-main);
   font-family: var(--font-family);
   overflow-x: hidden;
@@ -253,7 +256,7 @@ nav.scrolled {
   border: 2px solid transparent;
   background: linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
     linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) border-box;
-  box-shadow: 0 0 60px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 80px rgba(59, 130, 246, 0.25), 0 0 40px rgba(168, 85, 247, 0.25);
 }
 
 .profile-img-container img {
