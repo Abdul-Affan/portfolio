@@ -618,16 +618,21 @@ nav.scrolled {
 
   .timeline-dot {
     left: 20px;
+    top: 0;
   }
 
   .timeline-item,
   .timeline-item:nth-child(even) {
     justify-content: flex-start;
-    padding-left: 45px;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-bottom: 2rem;
   }
 
   .timeline-card {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
