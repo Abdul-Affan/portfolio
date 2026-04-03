@@ -66,7 +66,7 @@ const App = () => {
       tech: ["HTML", "CSS", "JavaScript", "Python", "Flask", "MongoDB"],
       img: project3Img,
       status: "Completed",
-      github: "https://github.com/Abdul-Affan/your-repo"
+      github: "https://github.com/Abdul-Affan/"
     }
   ];
 
