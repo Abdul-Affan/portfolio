@@ -62,7 +62,7 @@ const App = () => {
     {
       title: "Agentic AI for Life Skills Assistant for Disable Children",
       category: "Web App",
-      desc: "A web-based AI-powered assistive platform designed to help children with developmental disabilities learn daily life skills through interactive lessons, voice guidance, and behavioral analysis. The system provides adaptive learning, progress tracking, and role-based dashboards for guardians and educators.",
+      desc: "An AI-powered web platform that helps children with developmental disabilities learn daily life skills through interactive lessons, voice guidance, and progress tracking.",
       tech: ["HTML", "CSS", "JavaScript", "Python", "Flask", "MongoDB"],
       img: project3Img,
       status: "Completed",
