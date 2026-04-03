@@ -537,10 +537,13 @@ nav.scrolled {
   margin-bottom: 2rem;
   display: flex;
   justify-content: flex-end;
+  padding-left: 50%;
 }
 
 .timeline-item:nth-child(even) {
   justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 50%;
 }
 
 .timeline-dot {
@@ -558,15 +561,18 @@ nav.scrolled {
 }
 
 .timeline-card {
-  width: 44%;
-  max-width: 280px;
-  padding: 0.75rem 1rem;
+  width: auto;
+  max-width: 260px;
+  padding: 0.7rem 1rem;
   text-align: left;
   position: relative;
+  margin-left: 12px;
 }
 
 .timeline-item:nth-child(even) .timeline-card {
   text-align: left;
+  margin-left: auto;
+  margin-right: 12px;
 }
 
 .timeline-card-header {
