@@ -549,7 +549,7 @@ nav.scrolled {
 .timeline-dot {
   position: absolute;
   left: 50%;
-  top: 1.5rem;
+  top: 0;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -566,13 +566,13 @@ nav.scrolled {
   padding: 0.7rem 1rem;
   text-align: left;
   position: relative;
-  margin-left: 12px;
+  margin-left: 0;
 }
 
 .timeline-item:nth-child(even) .timeline-card {
   text-align: left;
   margin-left: auto;
-  margin-right: 12px;
+  margin-right: 0;
 }
 
 .timeline-card-header {
