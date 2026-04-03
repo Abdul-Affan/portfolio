@@ -535,15 +535,13 @@ nav.scrolled {
   position: relative;
   width: 100%;
   margin-bottom: 2rem;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
 }
 
 .timeline-item:nth-child(even) {
-  justify-content: flex-end;
-  padding-left: 0;
-  padding-right: 50%;
+  /* Inherits grid-template-columns */
 }
 
 .timeline-dot {
@@ -560,16 +558,20 @@ nav.scrolled {
 }
 
 .timeline-card {
+  grid-column: 2;
   width: 260px;
   padding: 0.7rem 1rem;
   text-align: left;
   position: relative;
   margin-left: 0;
+  z-index: 50;
 }
 
 .timeline-item:nth-child(even) .timeline-card {
+  grid-column: 1;
+  justify-self: end;
   text-align: left;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: 0;
 }
 
