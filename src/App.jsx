@@ -347,7 +347,7 @@ const App = () => {
                   college: "CMR Institute of Technology, Bangalore",
                   year: "2026 (Expected)",
                   location: "Bangalore, India",
-                  desc: "Currently pursuing MCA with a focus on advanced computing. Holding a CGPA of 8.61."
+                  desc: "Currently pursuing MCA with a focus on advanced computing. Holding a CGPA of 8.68."
                 },
                 {
                   degree: "Bachelor of Computer Applications",
