@@ -339,8 +339,9 @@ nav.scrolled {
 
 .project-grid-v2 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .project-card-v2 {
@@ -351,6 +352,8 @@ nav.scrolled {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
+  max-width: 340px;
+  margin: 0 auto;
 }
 
 .project-card-v2:hover {
@@ -361,7 +364,7 @@ nav.scrolled {
 
 .project-img-container {
   position: relative;
-  height: 220px;
+  height: 180px;
   overflow: hidden;
 }
 
@@ -391,7 +394,7 @@ nav.scrolled {
 }
 
 .project-content-v2 {
-  padding: 2rem;
+  padding: 1.5rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
