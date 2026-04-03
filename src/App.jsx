@@ -247,6 +247,32 @@ const App = () => {
                 <span className="about-value">5+ Projects</span>
               </div>
             </div>
+
+            <div className="glass about-detailed-v2" data-reveal>
+              <div className="about-text-v2">
+                <h3>Driven by <span className="gradient-text">Innovation</span></h3>
+                <p>
+                  Passionate about building practical software that solves real-world problems and improves everyday life. 
+                  Whether it's writing clean, efficient code, optimizing system performance, or exploring new technologies, 
+                  I'm always ready for a challenge.
+                </p>
+                <p>
+                  I'm seeking an environment where I can grow, contribute meaningfully, and collaborate with a team 
+                  that values creativity and effective problem-solving.
+                </p>
+              </div>
+              <div className="soft-skills-v2">
+                <h4>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--accent-primary)' }}><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                  Soft Skills
+                </h4>
+                <div className="soft-skills-grid">
+                  {['Problem Solving', 'Team Collaboration', 'Communication', 'Adaptability', 'Time Management', 'Critical Thinking'].map(skill => (
+                    <span key={skill} className="soft-skill-tag">{skill}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
