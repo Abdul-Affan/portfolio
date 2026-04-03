@@ -7,6 +7,8 @@ import project2Img from './assets/project2.png'; // Using as ATM thumb
 const App = () => {
   const [scrolled, setScrolled] = useState(false);
   const formRef = useRef();
+  const cursorDotRef = useRef(null);
+  const cursorOutlineRef = useRef(null);
   const [isSending, setIsSending] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
@@ -84,6 +86,27 @@ const App = () => {
   }, [text, isDeleting, loopNum, typingSpeed]);
 
   useEffect(() => {
+    const handleMouseMove = (e) => {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      if (cursorDotRef.current) {
+        cursorDotRef.current.style.left = `${posX}px`;
+        cursorDotRef.current.style.top = `${posY}px`;
+      }
+      
+      if (cursorOutlineRef.current) {
+        cursorOutlineRef.current.animate({
+          left: `${posX}px`,
+          top: `${posY}px`
+        }, { duration: 500, fill: 'forwards' });
+      }
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
@@ -105,6 +128,8 @@ const App = () => {
 
   return (
     <div className="app">
+      <div className="cursor-dot" ref={cursorDotRef}></div>
+      <div className="cursor-outline" ref={cursorOutlineRef}></div>
       <nav className={scrolled ? 'scrolled' : ''}>
         <div className="container nav-content">
           <div className="logo">&lt;/&gt; Affan.dev</div>

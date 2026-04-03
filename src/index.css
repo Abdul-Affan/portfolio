@@ -29,6 +29,40 @@ body {
   line-height: 1.6;
 }
 
+/* Custom Cursor */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-primary);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 10000;
+  box-shadow: 0 0 10px var(--accent-primary);
+}
+
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--accent-secondary);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  .cursor-dot, .cursor-outline {
+    display: none; /* Hide custom cursor on mobile touch screens */
+  }
+}
+
 ul {
   list-style: none;
 }
