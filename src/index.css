@@ -524,7 +524,7 @@ nav.scrolled {
   content: '';
   position: absolute;
   width: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -553,16 +553,14 @@ nav.scrolled {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--bg-color);
-  border: 2px solid var(--accent-primary);
+  background: var(--accent-primary);
+  border: none;
   transform: translateX(-50%);
-  z-index: 10;
-  box-shadow: 0 0 8px var(--accent-primary);
+  z-index: 100;
 }
 
 .timeline-card {
-  width: auto;
-  max-width: 260px;
+  width: 260px;
   padding: 0.7rem 1rem;
   text-align: left;
   position: relative;
