@@ -162,7 +162,7 @@ const App = () => {
           <div className="container hero-container">
             <div className="hero-content" data-reveal>
               <div className="availability-tag">Available for Work</div>
-              <h1>I'm <span>Abdul Affan</span></h1>
+              <h1>I'm <span>Abdul Affan</span> <sub style="font-size: 0.8rem; vertical-align: super; opacity: 0.5;">v2.0</sub></h1>
               <h3 className="hero-subtitle">
                 {text}
                 <span className="cursor" style={{ marginLeft: '5px' }}>|</span>

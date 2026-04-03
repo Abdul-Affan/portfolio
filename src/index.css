@@ -352,8 +352,8 @@ nav.scrolled {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
-  width: 310px;
-  max-width: 310px;
+  width: 310px !important;
+  max-width: 310px !important;
   margin: 0 auto;
 }
 
