@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import profileImg from './assets/profile.jpeg';
 import project1Img from './assets/project1.png'; // Using as Chatbot thumb
 import project2Img from './assets/project2.png'; // Using as ATM thumb
+import project3Img from './assets/project3.png'; // Using as Agentic AI thumb
 
 const App = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -57,6 +58,15 @@ const App = () => {
       img: project2Img,
       status: "Completed",
       github: "https://github.com/Abdul-Affan/"
+    },
+    {
+      title: "Agentic AI for Life Skills Assistant for Disable Children",
+      category: "Web App",
+      desc: "A web-based AI-powered assistive platform designed to help children with developmental disabilities learn daily life skills through interactive lessons, voice guidance, and behavioral analysis. The system provides adaptive learning, progress tracking, and role-based dashboards for guardians and educators.",
+      tech: ["HTML", "CSS", "JavaScript", "Python", "Flask", "MongoDB"],
+      img: project3Img,
+      status: "Completed",
+      github: "https://github.com/Abdul-Affan/your-repo"
     }
   ];
 
