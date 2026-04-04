@@ -45,7 +45,15 @@ const App = () => {
       title: "Chatbot (NLP)",
       category: "AI/ML",
       desc: "Developed a basic chatbot capable of understanding and responding to user inputs using Natural Language Processing techniques.",
+      longDesc: "This project explores the intersection of machine learning and natural language processing. By leveraging advanced NLTK libraries, the chatbot can interpret user intent, handle basic entity recognition, and provide context-aware responses, making it an ideal tool for automated customer support or information retrieval.",
       tech: ["Python", "NLTK", "IntelliJ IDEA"],
+      features: [
+        "Natural Language Understanding (NLU) for intent classification",
+        "Pattern matching for robust response generation",
+        "Entity recognition to extract specific user data",
+        "Modular architecture for easy expansion of conversation topics"
+      ],
+      outcomes: "Gained deep experience in text tokenization, lemmatization, and sentiment analysis. Mastered the integration of Python-based NLP models with professional IDE workflows.",
       img: project1Img,
       status: "Completed",
       github: "https://github.com/Abdul-Affan/"
@@ -54,7 +62,15 @@ const App = () => {
       title: "ATM Management System",
       category: "Desktop App",
       desc: "Built an ATM Management System using Java Swing with features like login, transactions, and PIN change via JDBC.",
+      longDesc: "A comprehensive desktop application designed to simulate a real-world banking experience. It features a secure login system, real-time transaction processing, and a robust database backend to ensure data integrity and security for all banking operations.",
       tech: ["Java", "Swing", "MySQL", "JDBC"],
+      features: [
+        "Secure user authentication with masked input",
+        "Transaction tracking with historical record storage",
+        "Real-time balance updates and PIN management",
+        "Clean, intuitive desktop UI built with Java Swing"
+      ],
+      outcomes: "Developed a strong understanding of relational database management systems and Java Database Connectivity (JDBC). Learned valuable lessons in UI/UX design for desktop applications.",
       img: project2Img,
       status: "Completed",
       github: "https://github.com/Abdul-Affan/"
@@ -63,12 +79,22 @@ const App = () => {
       title: "Agentic AI for Life Skills Assistant for Disable Children",
       category: "Web App",
       desc: "An AI-powered web platform that helps children with developmental disabilities learn daily life skills through interactive lessons, voice guidance, and progress tracking.",
+      longDesc: "This socially impactful project utilizes agentic AI to provide a personalized learning assistant for children with disabilities. The platform delivers interactive lessons focused on essential life skills, providing voice-guided instructions and real-time feedback to encourage independence and confidence.",
       tech: ["HTML", "CSS", "JavaScript", "Python", "Flask", "MongoDB"],
+      features: [
+        "AI-driven personal assistant for voice-guided learning",
+        "Interactive lesson modules for diverse life skills",
+        "Progress tracking dashboard for parents and educators",
+        "Accessibility-first UI design for children with various needs"
+      ],
+      outcomes: "Integrated full-stack technologies with AI capabilities to solve a real-world social challenge. Mastered Flask-based backend development and MongoDB for flexible data storage.",
       img: project3Img,
       status: "Completed",
       github: "https://github.com/Abdul-Affan/"
     }
   ];
+
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const filteredProjects = activeFilter === 'All'
     ? allProjects
@@ -327,10 +353,14 @@ const App = () => {
                         <span className="status-dot"></span>
                         {project.status}
                       </div>
-                      <a href="#" className="details-link">
+                      <button 
+                        onClick={() => setSelectedProject(project)} 
+                        className="details-link"
+                        style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, font: 'inherit' }}
+                      >
                         Details
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -615,6 +645,66 @@ const App = () => {
           </a>
         </div>
       </footer>
+
+      {/* Project Details Modal */}
+      {selectedProject && (
+        <div className="modal-overlay" onClick={() => setSelectedProject(null)}>
+          <div className="modal-content glass" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setSelectedProject(null)}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div className="modal-inner">
+              <div className="modal-header">
+                <span className="modal-category">{selectedProject.category}</span>
+                <h2>{selectedProject.title}</h2>
+              </div>
+
+              <div className="modal-section">
+                <div className="section-title">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                  <h3>Description</h3>
+                </div>
+                <p>{selectedProject.longDesc}</p>
+              </div>
+
+              <div className="modal-section">
+                <div className="section-title">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <h3>Key Features</h3>
+                </div>
+                <ul className="features-list">
+                  {selectedProject.features.map((feature, index) => (
+                    <li key={index}>
+                      <span className="feature-dot"></span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="modal-section">
+                <div className="section-title">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  <h3>Technologies</h3>
+                </div>
+                <div className="tech-tags-grid">
+                  {selectedProject.tech.map((tech, index) => (
+                    <span key={index} className="tech-tag-v2">{tech}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="modal-section">
+                <div className="section-title">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                  <h3>Learning Outcomes</h3>
+                </div>
+                <p>{selectedProject.outcomes}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
