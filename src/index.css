@@ -1182,9 +1182,10 @@ nav.scrolled {
   position: relative;
   overflow: hidden;
   border-right: 1px solid var(--glass-border);
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-color: #0a0f1e;
   min-height: 400px;
 }
 
