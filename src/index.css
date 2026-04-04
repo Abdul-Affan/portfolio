@@ -1175,22 +1175,24 @@ nav.scrolled {
 .modal-body {
   display: grid;
   grid-template-columns: 45% 55%;
-  min-height: 80vh;
+  align-items: stretch;
+  min-height: 85vh;
 }
 
 .modal-image-side {
   position: relative;
   overflow: hidden;
   border-right: 1px solid var(--glass-border);
-  height: 85vh;
-  min-height: 500px;
 }
 
 .modal-image-side img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   display: block;
 }
 
