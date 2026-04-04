@@ -653,53 +653,57 @@ const App = () => {
             <button className="modal-close" onClick={() => setSelectedProject(null)}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
-            <div className="modal-inner">
-              <div className="modal-header">
-                <span className="modal-category">{selectedProject.category}</span>
-                <h2>{selectedProject.title}</h2>
-              </div>
-
-              <div className="modal-section">
-                <div className="section-title">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                  <h3>Description</h3>
-                </div>
-                <p>{selectedProject.longDesc}</p>
-              </div>
-
-              <div className="modal-section">
-                <div className="section-title">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <h3>Key Features</h3>
-                </div>
-                <ul className="features-list">
-                  {selectedProject.features.map((feature, index) => (
-                    <li key={index}>
-                      <span className="feature-dot"></span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="modal-section">
-                <div className="section-title">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                  <h3>Technologies</h3>
-                </div>
-                <div className="tech-tags-grid">
-                  {selectedProject.tech.map((tech, index) => (
-                    <span key={index} className="tech-tag-v2">{tech}</span>
-                  ))}
+            <div className="modal-body">
+              <div className="modal-image-side">
+                <img src={selectedProject.img} alt={selectedProject.title} />
+                <div className="modal-image-overlay">
+                  <span className="modal-category-badge">{selectedProject.category}</span>
+                  <h2>{selectedProject.title}</h2>
                 </div>
               </div>
-
-              <div className="modal-section">
-                <div className="section-title">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                  <h3>Learning Outcomes</h3>
+              <div className="modal-content-side">
+                <div className="modal-section">
+                  <div className="section-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    <h3>Description</h3>
+                  </div>
+                  <p>{selectedProject.longDesc}</p>
                 </div>
-                <p>{selectedProject.outcomes}</p>
+
+                <div className="modal-section">
+                  <div className="section-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <h3>Key Features</h3>
+                  </div>
+                  <ul className="features-list">
+                    {selectedProject.features.map((feature, index) => (
+                      <li key={index}>
+                        <span className="feature-dot"></span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="modal-section">
+                  <div className="section-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    <h3>Technologies</h3>
+                  </div>
+                  <div className="tech-tags-grid">
+                    {selectedProject.tech.map((tech, index) => (
+                      <span key={index} className="tech-tag-v2">{tech}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="modal-section">
+                  <div className="section-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="section-icon"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    <h3>Learning Outcomes</h3>
+                  </div>
+                  <p>{selectedProject.outcomes}</p>
+                </div>
               </div>
             </div>
           </div>
