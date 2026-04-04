@@ -1153,23 +1153,36 @@ nav.scrolled {
   border-radius: 20px;
   width: 100%;
   max-width: 1000px;
-  height: 85vh;
+  max-height: 85vh;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   animation: modalSlide 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-primary) transparent;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: var(--accent-primary);
+  border-radius: 10px;
 }
 
 .modal-body {
   display: grid;
   grid-template-columns: 45% 55%;
-  height: 100%;
+  min-height: 80vh;
 }
 
 .modal-image-side {
   position: relative;
   overflow: hidden;
   border-right: 1px solid var(--glass-border);
+  min-height: 80vh;
 }
 
 .modal-image-side img {
@@ -1241,10 +1254,7 @@ nav.scrolled {
 
 .modal-content-side {
   padding: 2.5rem 2rem 2.5rem 2.5rem;
-  overflow-y: auto;
-  height: 100%;
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent-primary) transparent;
+  overflow-y: visible;
 }
 
 .modal-content-side::-webkit-scrollbar {
