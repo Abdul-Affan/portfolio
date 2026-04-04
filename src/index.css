@@ -1173,13 +1173,12 @@ nav.scrolled {
 }
 
 .modal-body {
-  display: grid;
-  grid-template-columns: 45% 55%;
-  align-items: stretch;
+  display: flex;
   min-height: 85vh;
 }
 
 .modal-image-side {
+  flex: 0 0 45%;
   position: relative;
   overflow: hidden;
   border-right: 1px solid var(--glass-border);
@@ -1253,6 +1252,7 @@ nav.scrolled {
 }
 
 .modal-content-side {
+  flex: 1;
   padding: 2.5rem 2rem 2.5rem 2.5rem;
   overflow-y: visible;
 }
