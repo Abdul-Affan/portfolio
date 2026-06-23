@@ -342,10 +342,23 @@ nav.scrolled {
 
 .project-grid-v2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 310px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
   justify-content: center;
 }
+
+@media (max-width: 1200px) {
+  .project-grid-v2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .project-grid-v2 {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .project-card-v2 {
   background: #0f172a;
@@ -355,10 +368,10 @@ nav.scrolled {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
-  width: 310px !important;
-  max-width: 310px !important;
+  width: 100%;
   margin: 0 auto;
 }
+
 
 .project-card-v2:hover {
   transform: translateY(-10px);
