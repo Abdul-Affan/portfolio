@@ -4,6 +4,9 @@ import profileImg from './assets/profile.jpeg';
 import project1Img from './assets/project1.png'; // Using as Chatbot thumb
 import project2Img from './assets/project2.png'; // Using as ATM thumb
 import project3Img from './assets/project3.png'; // Using as Agentic AI thumb
+import project4Img from './assets/project4.png'; // College Club Portal
+
+
 
 const App = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -91,8 +94,28 @@ const App = () => {
       img: project3Img,
       status: "Completed",
       github: "https://github.com/Abdul-Affan/"
+    },
+    {
+      title: "College Club Portal",
+      category: "Web App",
+      desc: "A full-stack management system for college clubs and events, featuring role-based access and real-time interaction.",
+      longDesc: "Built with the MERN stack and Firebase, this portal streamlines club management. It allows students to discover clubs, RSVP for events, and enables admins to manage memberships and announcements through a secure, role-based dashboard.",
+      tech: ["React", "Node.js", "Express", "Firebase Firestore", "Firebase Auth"],
+      features: [
+        "Role-based authentication (Student/Admin)",
+        "Club discovery and creation system",
+        "Event publishing with RSVP tracking",
+        "Membership request and approval workflow",
+        "Admin announcement broadcasting system"
+      ],
+      outcomes: "Mastered seamless integration of React with Firebase services. Implemented complex role-based logic and real-time database updates for a dynamic user experience.",
+      img: project4Img,
+      status: "Completed",
+      github: "https://github.com/Abdul-Affan/College-club-portal"
     }
   ];
+
+
 
   const [selectedProject, setSelectedProject] = useState(null);
 
