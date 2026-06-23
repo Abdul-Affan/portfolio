@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import profileImg from './assets/profile.jpeg';
+import profileImg from './assets/profile_new.jpeg';
 import project1Img from './assets/project1.png'; // Using as Chatbot thumb
 import project2Img from './assets/project2.png'; // Using as ATM thumb
 import project3Img from './assets/project3.png'; // Using as Agentic AI thumb
